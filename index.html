@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Menu</title>
+  <title>Kabal Dashboard</title>
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="style.css">
+
+  
 </head>
 
 <body>
@@ -133,51 +135,46 @@
     </div>
   </nav>
 
-
-  <main>
+  <main id="container-wrapper">
     <h1  class = "Kabal">Kabal Dashboard</h1>
     <p class="text">
- 
-      <form>
+    <form id="form-container" onsubmit="return false;">
+      <div class="avatar" id="input-avatar">
+        <img src="img/logo.png" height="40" width="40"/>
+      </div>
+      <fieldset>
+        <textarea placeholder="What's happening?" id="input-textarea" onkeypress="checkCharacterCount(this)" onchange="checkCharacterCount(this)"></textarea>
+        <div class="character-count"><span id="input-characters">0</span>/140 characters</div>
+      </fieldset>
+      <button class="compose" onclick="submitPost()">
+        <img src="img/arrow.png" height="30" width="30"/>
+      </button>
+    </form>
+    <article id="article-container-1">
+      <header>
+        <button class="close" onclick="deletePost(1)">
+          <img src="img/close.png" height="15" width="19"/>
+        </button>
         <div class="avatar">
           <img src="img/logo.png" height="40" width="40"/>
         </div>
-        <fieldset>
-          <textarea placeholder="What's happening?"></textarea>
-          <div class="character-count"><span>0</span>/140 characters</div>
-        </fieldset>
-        <button class="compose">
-          <img src="img/arrow.png" height="30" width="30"/>
-        </button>
-      </form>
-      <article>
-        <header>
-          <button class="close">
-            <img src="img/close.png" height="21" width="24"/>
-          </button>
-          <div class="avatar">
-            <img src="img/logo.png" height="40" width="40"/>
-          </div>
-          <h1 class = "usr_name">Marty McFly</h1>
-          <h2>@15958003841</h2>
-        </header>
-        <blockquote>
-          Hi, everyone. I'm learning to type on <a href="https://www.typing.com" target="_blank">www.typing.com</a>. Wow, a
-          link!
-        </blockquote>
-        <hr/>
-        <footer>
-          <p class="date-posted">Posted
-            <time>10/10/21 02:13:19</time>
-          </p>
-          <button class="heart">
-            <img src="img/heart.png" height="17" width="22"/>
-          </button>
-        </footer>
-      </article>
-  </main>
-
-
+        <h1>Rin Sun</h1>
+        <h2>rintfd@163.com</h2>
+      </header>
+      <blockquote>
+        Hello there. This is the dashboard of kabal. See more about the author in  <a href="https://github.com/" target="_blank">Rin's Github</a>. Wow, a
+        link!
+      </blockquote>
+      <hr/>
+      <footer>
+        <p class="date-posted">Posted
+          <time>10/10/21 03:43:10</time>
+        </p>
+        <button class="heart" onclick="lovePost(1)">
+        <img src="img/heart.png" id="heart-image-1" height="19" width="23"/>
+      </button>
+      </footer>
+    </article>
 
   <script src="app.js"></script>
 </body>
