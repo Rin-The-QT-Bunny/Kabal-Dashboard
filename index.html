@@ -135,17 +135,49 @@
 
 
   <main>
-    <h1>Kabal Dashboard</h1>
+    <h1  class = "Kabal">Kabal Dashboard</h1>
     <p class="text">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur animi voluptatibus cum maxime distinctio
-      iste quod deleniti eius, autem voluptates cumque suscipit iure quasi eligendi ullam. Sapiente eligendi porro
-      reprehenderit corrupti error facilis quo, fugiat fugit? Maiores aliquam ad, molestiae iste nihil, commodi
-      doloremque tempore excepturi aut id ducimus unde?
-    </p>
-    <p class="copyright">
-      &copy; 2021 - <span>Celerinsil</span> All Rights Reserved.
-    </p>
+ 
+      <form>
+        <div class="avatar">
+          <img src="img/logo.png" height="40" width="40"/>
+        </div>
+        <fieldset>
+          <textarea placeholder="What's happening?"></textarea>
+          <div class="character-count"><span>0</span>/140 characters</div>
+        </fieldset>
+        <button class="compose">
+          <img src="img/arrow.png" height="30" width="30"/>
+        </button>
+      </form>
+      <article>
+        <header>
+          <button class="close">
+            <img src="img/close.png" height="21" width="24"/>
+          </button>
+          <div class="avatar">
+            <img src="img/logo.png" height="40" width="40"/>
+          </div>
+          <h1 class = "usr_name">Marty McFly</h1>
+          <h2>@15958003841</h2>
+        </header>
+        <blockquote>
+          Hi, everyone. I'm learning to type on <a href="https://www.typing.com" target="_blank">www.typing.com</a>. Wow, a
+          link!
+        </blockquote>
+        <hr/>
+        <footer>
+          <p class="date-posted">Posted
+            <time>10/10/21 02:13:19</time>
+          </p>
+          <button class="heart">
+            <img src="img/heart.png" height="17" width="22"/>
+          </button>
+        </footer>
+      </article>
   </main>
+
+
 
   <script src="app.js"></script>
 </body>

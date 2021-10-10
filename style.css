@@ -63,9 +63,8 @@ main {
   flex-direction: column;
 }
 
-main h1 {
-  margin-bottom: 1rem;
-}
+
+
 
 main .copyright {
   margin-top: auto;
@@ -387,3 +386,210 @@ body.shrink .admin-profile {
 body.shrink .tooltip {
   display: grid;
 }
+
+main article {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-color: #eaeaea;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+main blockquote {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+}
+/* Form */
+main form {
+			background-color: #D5EBF8;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #81C4E9;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 20px;
+			padding-bottom: 30px;
+		}
+/* Textarea */
+main textarea {
+			border-radius: 10px;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #81C4E9;
+			color: #4a4a4a;
+			font-size: 14px;
+			height: 50px;
+			margin-bottom: 2px;
+			padding: 6px;
+			resize: none;
+			width: 100%;
+}
+main textarea::placeholder {
+			color: #a9a9a9;
+    }
+main textarea:focus {
+			border-color: #2D9CDB;
+			outline: none;
+		}
+		/* Fieldset */
+main fieldset {
+			border: none;
+			float: left;
+			font-size: 12px;
+			margin: 0;
+			padding: 0;
+			width: calc(100% - 122px);
+		}
+main fieldset div {
+			color: #2D9CDB;
+			margin-left: 6px;
+			margin-top: 2px;
+		}
+
+/* Anchor Tag */
+main a {
+			color: #2D9CDB;
+			font-family: 'open-sans', sans-serif;
+			font-weight: 700;
+		}
+main a:hover {
+			color: #1789C9;
+		}
+/* Adding border styling, padding, and shadows to articles */
+main article {
+			background-color: #ffffff;
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 10px;
+			margin-bottom: 20px;
+			padding: 20px;
+			border-color: #eaeaea;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+			position: relative;
+		}
+/* Styles for the Avatar */
+main	.avatar {
+			background-color: #ffffff;
+			border-width: 1px;
+			border-style: solid;
+			border-color: #81C4E9;
+			border-radius: 50%;
+			float: left;
+			height: 50px;
+			margin-right: 10px;
+			min-width: 50px;
+			position: relative;
+		}
+main	.avatar img {
+			left: 50%;
+			position: absolute;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		/* Add spacing around the blockquotes */
+main	blockquote {
+			margin-left: 0;
+			margin-right: 0;
+			margin-top: 20px;
+		}
+		/* Button */
+main	button {
+			border: none;
+			cursor: pointer;
+			padding-left: 0;
+			padding-right: 0;
+			transform: scale(1);
+		}
+		main button:hover {
+			transform: scale(1.2);
+		}
+		button:focus {
+			outline: none;
+		}
+		button.close {
+			opacity: 0.5;
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+		button.close:hover {
+			opacity: 1;
+		}
+		/* The new button in the form */
+		/*** Specifically style buttons with the "compose" class ***/
+		button.compose {
+			background-color: #2D9CDB;
+			border-radius: 10px;
+			margin-left: 10px;
+			height: 50px;
+			width: 50px;
+		}
+		button.compose:hover {
+			background-color: #1789C9;
+		}
+		main button.heart {
+			float: right;
+		}
+		main button.heart:hover {
+			opacity: 0.8;
+		}
+		/* Date Posted */
+		.date-posted {
+			color: #a9a9a9;
+			margin-bottom: 0;
+			width: 90%;
+			float: left;
+			margin-top: 0;
+		}
+		.date-posted time {
+			color: #4a4a4a;
+		}
+		/* The footer container */
+main	footer {
+			margin-top: 20px;
+			height: 15px;
+		}
+main	footer p {
+			color: #a9a9a9;
+			font-size: 14px;
+			font-weight: 300;
+		}
+		/* Headings */
+main .usr_name {
+			font-family: 'open-sans', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1.2;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-top: 8px;
+		}
+main	h2 {
+			color: #a9a9a9;
+			font-family: 'open-sans', sans-serif;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 1.2;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		/* Horizontal divider line */
+main	hr {
+			border-width: 1px;
+			border-style: solid;
+			border-color: #eaeaea;
+		}
+
+    main .Kabal {
+      margin-bottom: 1rem;
+      color: #1f1c1c;
+      display: flex;
+      font-weight: 500;
+    }
